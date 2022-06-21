@@ -16,6 +16,13 @@
     grid-column-start: 1;
     grid-column-end: -1;
 }
+#content1{
+    width: 50vw;
+}
+#content2{
+    width: 50vw;
+}
+
 
 @media only screen and (max-width: 620px){
     #content1{
