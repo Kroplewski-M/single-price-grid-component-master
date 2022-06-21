@@ -8,11 +8,24 @@
     grid-template-areas: 
     "header header"
     "content1 content2";
-    
+    grid-auto-rows: 1fr;
+    height: 100vh;
 }
 #header{
     width: 100vw;
     grid-column-start: 1;
     grid-column-end: -1;
-    
+}
+
+@media only screen and (max-width: 620px){
+    #content1{
+        width: 100vw;
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    #content2{
+        width: 100vw;
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
 }
