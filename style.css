@@ -1,0 +1,28 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+.container{
+    display: grid;
+    grid-template-columns: minmax(1fr,2fr);
+    grid-template-areas: 
+    "header header"
+    "content1 content2";
+    width: 100vw;
+}
+#header{
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    
+}
+@media screen and (max-width: 768px) {
+    #content1{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    #content2{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+  }
